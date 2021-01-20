@@ -14,11 +14,20 @@
 <body>
     <i class="far fa-calendar-alt"></i>
     <h1 class="title-primary">Holidays Calendar</h1>
-    <form class="form" action="">
-        <input class="form-datos" type="text" name="" id="" placeholder="INGRESA EL PAIS" >
+    <form class="form" id="form" action="#" method="POST">
         <select class="form-datos" name="" id="form-datos">
+            <option class="form-option" id="pais" value="">SELECCIONE UN PAIS</option>
+            <option class="form-option" id="pais" value="PE">Perú</option>
+            <option class="form-option" id="pais" value="BR">Brazil</option>
+            <option class="form-option" id="pais" value="CL">Chile</option>
+            <option class="form-option" id="pais" value="CO">Colombia</option>
+            <option class="form-option" id="pais" value="US">Estados Unidos</option>
         </select>
-        <input class="form-btn" type="submit" value="BUSCAR HOLIDAYS">
+        <select class="form-datos" name="" id="form-anios">
+            <option class="form-option" id="anio" value="">SELECCIONE UN AÑO</option>
+        </select>
+        <input class="form-btn" id="submit" type="submit" value="BUSCAR HOLIDAYS">
+        <!-- <div class="form-alerta" id="error"></div> -->
     </form>
     
     <script src="./js/main.js"></script>

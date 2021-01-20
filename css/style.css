@@ -60,6 +60,17 @@ body {
   background: rgba(0, 0, 0, 0.247) !important;
   border: none !important;
 }
+.form-alerta {
+  margin: 2rem auto;
+  text-align: center;
+  font-family: "K2D", sans-serif;
+  font-weight: 800;
+  line-height: 2.4rem;
+  width: 100%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.247) !important;
+  border: 3px solid #b4004b;
+}
 
 .far.fa-calendar-alt {
   display: flex;
