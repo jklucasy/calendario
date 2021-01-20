@@ -6,6 +6,7 @@ body {
 }
 
 .title-primary {
+  font-family: "Aladin", cursive;
   color: #fff;
   margin: auto;
   margin: 3rem 0;
@@ -21,9 +22,11 @@ body {
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
+  font-family: "K2D", sans-serif;
   margin: auto;
 }
 .form-datos {
+  font-family: "K2D", sans-serif;
   height: 2rem;
   width: 100%;
   color: #fff;
@@ -33,10 +36,11 @@ body {
   border-bottom: 1px solid #fff;
 }
 .form-btn {
+  font-family: "K2D", sans-serif;
   height: 2.8rem;
   width: 100%;
   padding: 0.7rem 0;
-  font-weight: bolder;
+  font-weight: 800;
   color: #fff;
   background: none;
   border: 1px solid #fff;
@@ -47,6 +51,14 @@ body {
   background: #caa500;
   border: 1px solid #caa500;
   border-radius: 0.5rem;
+}
+.form-option {
+  font-family: "K2D", sans-serif;
+  height: 2rem;
+  width: 100%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.247) !important;
+  border: none !important;
 }
 
 .far.fa-calendar-alt {

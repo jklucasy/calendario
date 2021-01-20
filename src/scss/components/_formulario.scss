@@ -6,8 +6,10 @@
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
+    font-family: 'K2D', sans-serif;
     margin: auto;
     &-datos{
+        font-family: 'K2D', sans-serif;
         height: 2rem;
         width: 100%;
         color: $font_primary;
@@ -17,10 +19,11 @@
         border-bottom: 1px solid $font_primary;
     }
     &-btn{
+        font-family: 'K2D', sans-serif;
         height: 2.8rem;
         width: 100%;
         padding: .7rem 0;
-        font-weight: bolder;
+        font-weight: 800;
         color: $font_primary;
         background: none;
         border: 1px solid $font_primary;
@@ -31,5 +34,13 @@
             border: 1px solid $btn_primary;
             border-radius: .5rem;
         }
+    }
+    &-option{
+        font-family: 'K2D', sans-serif;
+        height: 2rem;
+        width: 100%;
+        color: $font_primary;
+        background: $color_secundary!important;
+        border: none!important;
     }
 }
