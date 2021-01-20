@@ -1,9 +1,51 @@
 body {
   background: #1a0000;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
 }
 
 .title-primary {
   color: #fff;
+  margin: auto;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.form {
+  width: 20%;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+.form-datos {
+  height: 2rem;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 2rem;
+  background: rgba(0, 0, 0, 0.247);
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.form-btn {
+  height: 2.8rem;
+  width: 100%;
+  padding: 0.7rem 0;
+  font-weight: bolder;
+  color: #fff;
+  background: none;
+  border: 1px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+.form-btn:hover {
+  color: #1a0000;
+  background: #caa500;
+  border: 1px solid #caa500;
+  border-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,1 @@
-fetch("https://holidayapi.com/v1/holidays", {
-    body: "country=PE&year=2020&pretty&key=d6d9a74a-04c3-46c6-ad32-e70b64464dfb",
-    headers: {
-    "Content-Type": "application/x-www-form-urlencoded"
-    },
-    method: "POST"
-}).then(res=>console.log(res.json()))
+fetch("https://calendarific.com/api/v2/holidays?&api_key=baa9dc110aa712sd3a9fa2a3dwb6c01d4c875950dc32vs&country=${pais}&year=${año}")

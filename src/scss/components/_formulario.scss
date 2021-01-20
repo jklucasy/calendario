@@ -1,0 +1,35 @@
+.form{
+    width: 20%;
+    height: 14rem;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    &-datos{
+        height: 2rem;
+        width: 100%;
+        color: $font_primary;
+        margin-bottom: 2rem;
+        background: $color_secundary;
+        border: none;
+        border-bottom: 1px solid $font_primary;
+    }
+    &-btn{
+        height: 2.8rem;
+        width: 100%;
+        padding: .7rem 0;
+        font-weight: bolder;
+        color: $font_primary;
+        background: none;
+        border: 1px solid $font_primary;
+        transition: all .3s ease-in-out;
+        &:hover{
+            color: $color_primary;
+            background: $btn_primary;
+            border: 1px solid $btn_primary;
+            border-radius: .5rem;
+        }
+    }
+}
