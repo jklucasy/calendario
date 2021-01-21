@@ -50,6 +50,28 @@ function consultarApi(pais,anio){
     const url=`https://calendarific.com/api/v2/holidays?&api_key=${apiKy}&country=${pais}&year=${anio}`
     fetch(url)
         .then(res=>res.json())
-        .then(datos=>console.log(datos));
+        .then(datos=>mostrar(datos.response.holidays));
 }
 
+function mostrar(datos){
+    const {holidays} = datos;
+    datos.forEach(dato => {
+        const {name, date:{datetime:{day, month, year}}, description} = dato;
+        const contenedor=document.querySelector('#container');
+        const informacion=document.createElement('div');
+        informacion.classList.add('container-contenido');
+        informacion.innerHTML=`
+            <ul class="container-lista">
+                <li class="container-item" >${day}</li>
+                <li class="container-item" >month: ${month}</li>
+                <li class="container-item" >${name}</li>
+            </ul>
+            <div class="container-parragraph">
+                    <p>
+                        ${description}
+                    </p>
+            </div>
+        `
+        contenedor.appendChild(informacion);
+    });
+}

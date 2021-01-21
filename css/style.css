@@ -81,4 +81,52 @@ body {
   font-size: 8rem;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+  color: #fff;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: "K2D", sans-serif;
+}
+.container-contenido {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+}
+.container-contenido:hover div {
+  opacity: 1;
+  transform: translateY(-150px);
+}
+.container-lista {
+  height: 100%;
+  list-style: none;
+  text-align: center;
+}
+.container-lista:hover {
+  opacity: 0;
+}
+.container-item {
+  margin-bottom: 1rem;
+}
+.container-item:first-child {
+  font-size: 3rem;
+}
+.container-item:last-child, .container-item:nth-child(2) {
+  font-size: 1.3rem;
+}
+.container-parragraph {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  background: #9b9800;
+  transition: all 0.3s ease-in-out;
+}
+
 /*# sourceMappingURL=style.css.map */
